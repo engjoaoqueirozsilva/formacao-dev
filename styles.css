@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f7f6; /* Um verde bem suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #e0f2f1; /* Um azul mais claro */
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #00796b; /* Verde escuro */
+    font-size: 2.8em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.module {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    padding: 30px;
+    position: relative; /* Para a linha de conexão */
+    border-left: 5px solid #009688; /* Uma cor de destaque */
+}
+
+.module:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; /* Metade da margem entre módulos */
+    left: 40px; /* Alinhado com a borda esquerda */
+    width: 2px;
+    height: 40px; /* Altura da conexão */
+    background-color: #009688;
+}
+
+.module h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-top: 0;
+    border-bottom: 2px solid #e0f2f1;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.lessons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.lesson {
+    background-color: #f0f7f9; /* Azul claro para as lições */
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #4db6ac; /* Verde água */
+}
+
+.lesson h3 {
+    color: #004d40; /* Verde bem escuro */
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.lesson p {
+    font-size: 0.95em;
+    color: #666;
+}
+
+.future-module {
+    background-color: #e8f5e9; /* Um verde bem clarinho */
+    border-left: 5px solid #2e7d32; /* Verde mais escuro */
+}
+
+.future-module h2 {
+    color: #2e7d32;
+    border-bottom-color: #c8e6c9;
+}
+
+.future-module ul {
+    list-style: none;
+    padding: 0;
+}
+
+.future-module li {
+    background-color: #dcedc8;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #888;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+}
